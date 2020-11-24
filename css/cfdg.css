@@ -1,0 +1,287 @@
+body {
+  background-color: #c0c0c0;/* medium - grey */
+}
+
+.navbar-default{
+    background-color:#000000;
+}
+
+.navbar, .dropdown-menu{
+    background-color: #000000;
+}
+
+/* Normal links in navbar */
+.navbar-default .navbar-nav >li.a{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Hover link in navbar */
+.navbar-default .navbar-nav>li>a:hover{
+    color: #ff99ff;
+    font-weight: bold;
+}
+
+/* Sub Menu Normal Links */
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+    color:#ffffff;
+    font-weight: bold;
+}
+
+/* Sub Menu Hover Links */
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
+    color: #c0c0c0;
+    font-weight: bold;
+    background-color: #771158;
+}
+
+/* Navigation Header */
+.navbar-default> .navbar-header>h1{
+    color:#ffffff;
+    padding-left: 10px;
+}
+
+/* Social Media Icon Styling (normal) */
+.navbar-text>a:link{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.navbar-text>a:visited{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+/* Social Media Icon Styling (hover) */
+.navbar-text>a:hover{
+    color:#EC95B1; /* light pink */
+    text-decoration:none;
+}
+
+/* Styles main div... */
+div.main{
+    background-color: rgba(255,255,255, .5); /* white transparent */
+    padding:20px;
+}
+
+/* Links in 'main' part if the page... */
+a{font-weight: bold;}
+a:link{color:#4c022c; text-decoration:none;} /* dark purple */
+a:visited{color:#616161; text-decoration:none;} /* dark grey */
+a:hover{color:#9b045a;text-decoration: none;} /* maroonish */
+
+.error{
+    color:red;
+}
+
+.btn-success{
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.btn-success:hover{
+    color:#fff;
+    background-color: #286016;
+    border-color: #1b3d10;
+}
+
+.btn-warning{
+    color:#fff;
+    background-color: #c98097; /*purple/grey */
+    border-color: #7E1E3d; /* dark purple/mauve */
+}
+
+.btn-warning:hover{
+    color:#fff;
+    background-color: #7E1E3d; /*dark purple/mauve */
+    border-color: #7E1E3d; /* dark purple/mauve */   
+}
+
+.modal .modal-content{
+    width:300px;
+    margin:auto;
+}
+
+/* Controls width of message 'text area' field in contact modal */
+textarea{
+    width:100%;
+    height:150px;
+    padding:12px 20px;
+    box-sizing:border-box;
+    border:2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    
+}
+
+/* Contact Modal Media queries */
+@media(min-width:768px){
+    .modal .modal-content{
+        width:350px;
+    }
+}
+
+@media(min-width:992px){
+    .modal .modal-content{
+        width:450px;
+    }
+}
+
+@media(min-width:1200px){
+    .modal .modal-content{
+        width:600px;
+    }
+}
+
+/* Slide Show styling */
+#carousel-custom{
+    padding-bottom: 0px;
+    display:table;
+    margin:0 auto;
+    width:200px;
+}
+
+/*media queries control width of slideshow */
+@media (min-width:300px){
+    #carousel-custom{
+        width:250px;
+    }
+}
+
+@media (min-width:500px){
+    #carousel-custom{
+        width:450px;
+    }
+}
+
+@media (min-width:768px){
+    #carousel-custom{
+        width:600px;
+    }
+}
+
+@media (min-width:992px){
+    #carousel-custom{
+        width:800px;
+    }
+}
+
+/* Centers slides in slide show holder */
+.carousel-inner img{
+    margin:auto;
+    min-height:100px; /* set min height - could result in pixelation */
+    max-height: 100px; /* set maximum height */
+    width:auto;
+}
+
+@media (min-width:300px){
+    .carousel-inner img{
+        min-height: 125px;
+        max-height: 125px;
+    }
+}
+
+@media (min-width:500px){
+    .carousel-inner img{
+        min-height: 280px;
+        max-height: 280px;
+    }
+}
+
+@media (min-width:768px){
+    .carousel-inner img{
+        min-height: 380px;
+        max-height: 380px;
+    }
+}
+
+@media (min-width:992px){
+    .carousel-inner img{
+        min-height: 400px;
+        max-height: 400px;
+    }
+}
+
+
+img.little{
+    width:75px;
+}
+
+/* puts strip underneath images */
+#carousel-custom .carousel-indicators{
+    margin:10px 0 0;
+    overflow: auto;
+    position: static;
+    text-align: center;
+    width: 100%;
+}
+
+/* Hides 'dot' indicators */
+#carousel-custom .carousel-indicators li{
+    background-color: transparent;
+    display:inline-block;
+    height:auto;
+    margin:0 !important;
+    width:auto;
+}
+
+/* Makes inactive slides lighter */
+#carousel-custom .carousel-indicators li img{
+    display: block;
+    opacity: 0.35;
+}
+
+/* Makes active slides 100% opaque */
+#carousel-custom .carousel-indicators li.active img{
+    opacity: 1;
+}
+
+/* Makes hover slide a bit darker */
+#carousel-custom .carousel-indicators li:hover img{
+    opacity:0.75;
+}
+
+div.indicators{
+    overflow:auto;
+    max-height: 400px;
+    max-width: 400px;
+    margin:auto;
+}
+
+/* lightbox styling */
+/* source: http://bootsnip.com/snippets/featured/bootstrap-lightbox */
+
+img.lightbox{
+    width: 100%;
+    height: 100%;
+}
+
+img.gallery{
+    max-height: 200px;
+    width: auto;
+    padding: 5px;
+}
+
+#lightbox.close{
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    padding: 5px 8px;
+    border-radius: 30px;
+    border:2px solid rgb(255, 255, 255);
+    position:absolute;
+    top: -15px;
+    right: -55px;
+    
+    z-index:1032;
+    
+}
+
+
+
+
+
+
+    
+
+

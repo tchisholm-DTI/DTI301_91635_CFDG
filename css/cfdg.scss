@@ -1,0 +1,55 @@
+/* variables go here */
+
+$body_back: #c0c0c0; /* medium - grey */
+$headfoot_back: #000000;  /* black */
+$nav_text_hover: #c0c0c0; /* medium - grey */
+$nav_links: #ffffff; /* white */
+$sub_link_back: #771158; /* dark purple */
+$main_div_back: #rgba(255,255,255, .5); /* white transaprent */
+$error_text: #c60101; /* dark grey */
+$body_link: #4c022c; /* dark purple */
+$body_visited: #616161; /* dark grey */
+$body_hover: #9b045a; /* maroonish */
+$social_link: #ffffff; /* white */
+$social_hover: #EC95B1; /* light pink */
+$success_border: #1b3d10; /* dark green */
+$success: #286016; /* green */
+
+body{
+    background-color:$body_back;
+}
+
+.navbar, .dropdown-menu{
+    background-color: $headfoot_back;
+}
+
+/* Normal links in navbar */
+.navbar-default .navbar-nav >li.a{
+    color: $nav_links;
+    font-weight: bold;
+}
+
+/* Hover link in navbar */
+.navbar-default .navbar-nav>li>a:hover{
+    color: $nav_text_hover;
+    font-weight: bold;
+}
+
+/* Sub Menu Normal Links */
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+    color:#ffffff;
+    font-weight: bold;
+}
+
+/* Sub Menu Hover Links */
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
+    color:$nav_text_hover;
+    font-weight: bold;
+    background-color: $sub_link_back;
+}
+
+/* Navigation Header */
+.navbar-default> .navbar-header>h1{
+    color:#ffffff;
+    padding-left: 10px;
+}
